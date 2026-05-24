@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      
+        <title>Form Validation</title>
+
+        <style>
+            .body{
+                background-image: url("https://img.freepik.com/premium-photo/close-up-futuristic-background-with-lot-lights-generative-ai_974533-4880.jpg");
+                background-size: cover;
+                font-family: Arial, sans-serif;
+            }
+            .container{
+                width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+                
+                border-image: linear-gradient(to right, #98cdea, #e7f69a , #f476d0) 1;
+               
+                border-radius: 5px;
+                background-color: #e2e4f9;
+            }
+
+            .skill, .avail, .timing, .pay, .source{
+                margin-bottom: 15px;
+                border: 2px solid;
+                border-radius:5px;
+                padding: 10px;
+                
+                background-color: #f9f9f9;
+                
+                border-image: linear-gradient(to right, #98cdea, #e7f69a , #f476d0) 1;
+            }
+
+            .submit, .reset{
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body class = "body">
+        <div class = "container">
+        <h1>AI Agents & Automation Workshop</h1>
+        <form id = "myform">
+           
+<label for="name">Name: </label>
+<input type = "text" placeholder = "Enter your name"id ="name" required> <br> <br>
+
+<label for = "email">Email: </label> 
+<input type = "email" placeholder = "Enter valid Email " id = "email" required> <br><br> 
+
+<label >College/Organization</label>
+<input type = "text" required > <br> <br> 
+
+<div class ="skill">
+<label >AI skill Level</label>
+<br>
+<br>
+<input type = "radio" name = "skill" value="Advanced" >Advanced 
+<br>
+<input type = "radio" name = "skill" value = "Intermediate">Intermediate
+<br>
+<input type = "radio" name = "skill" value = "Beginner">Beginner
+<br>
+<br>
+</div>
+
+<div class = "avail">
+<label>Laptop Available?</label> <br><br>
+<input type ="radio" name = "avail" >Yes 
+<br>
+<input type = "radio" name = "avail" >No
+<br>
+<br>
+</div>
+
+
+<div class = "timing">
+<label >Prefferd Session Timings</label> <br>
+<br>
+<select required>
+    <option value="">Select a timing</option>
+    <option value="10:00-12:00">10:00 Am - 12:00 PM</option>
+    <option value="14:00-16:00">2:00 PM - 4:00 PM</option>
+    <option value="18:00-20:00">6:00 PM - 8:00 PM</option>
+</select>
+<br>
+<br>
+</div>
+
+<div class="pay">
+<label >Upload Payment Screenshot</label> <br><br>
+<input type = "file" required>
+<br>
+<br>
+</div>
+
+
+<div class="source" >
+<label>How did you hear about us?</label>
+<br><br>
+<input type = "checkbox" name = "source" value = "Instagram">Instagram
+<br>
+<input type = "checkbox" name = "source" value = "Linkedin">Linkedin
+<br>
+<input type = "checkbox" name = "source" value = "Twitter" >Twitter 
+<br>
+<br>
+<br>
+</div>
+
+
+<input type = "submit" id = "submit" class = "submit"value = "Submit">
+<input type = "reset" class= "reset" value = "Reset">
+
+
+</div>
+
+</form>
+
+<script src="pro.js"></script>
+
+    </body>
+</html>
