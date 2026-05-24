@@ -1,6 +1,6 @@
 # Gnanadhara Foundation NGO Web Development
 
-This repository contains web development projects for **Gnanadhara Foundation NGO** - focusing on AI, agents, and automation workshops.
+
 
 ---
 
